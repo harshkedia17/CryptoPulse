@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import SignIn from "./routes/SignIn";
 import SignUp from "./routes/SignUp";
 import Accounts from "./routes/Accounts";
+import CoinPage from "./routes/CoinPage";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/account" element={<Accounts />} />
+        <Route path="/coin/:coinId" element={<CoinPage/>}  />
       </Routes>
     </ThemeProvider>
   );
